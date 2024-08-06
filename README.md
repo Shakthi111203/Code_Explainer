@@ -34,5 +34,6 @@ To set up and run the Python Code Explainer locally, follow these steps:
   - The explanation will be displayed in the output textbox.
 
 5. **Stopping the Application**:
+   
    To stop the application, go back to your terminal where the script is running and press Ctrl+C.
    
