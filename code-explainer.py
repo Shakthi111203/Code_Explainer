@@ -1,7 +1,7 @@
 import google.generativeai as palm
 import os
 
-palm.configure(api_key =('AIzaSyDJdgLkJ1KJAHZqlk3WLbEV739xybREtUk'))
+palm.configure(api_key =('Your API key here'))
 
 models = [m for m in palm.list_models() if 'generateText' in m.supported_generation_methods]
 model = models[0].name
@@ -11,7 +11,7 @@ import gradio as gr
 import os
 import google.generativeai as palm
 
-palm.configure(api_key="AIzaSyDJdgLkJ1KJAHZqlk3WLbEV739xybREtUk")
+palm.configure(api_key="Your API key here")
 
 def get_completion(code_snippet):
 
