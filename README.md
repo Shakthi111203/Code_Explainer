@@ -1,54 +1,38 @@
-# Code_Explainer
-Overview
-The Python Code Explainer is a web-based tool designed to help users understand Python code snippets. Utilizing Google Generative AI, this tool provides step-by-step explanations of code snippets, breaking down complex code into digestible parts and detailing each step with intermediate checkpoints and results.
+# Python Code Explainer
 
-Features
-Interactive Code Explanation: Simply input a Python code snippet, and get a detailed, step-by-step explanation.
-Customizable Output: Adjust the level of detail and clarity in explanations based on your needs.
-Web Interface: User-friendly interface built with Gradio for easy interaction.
-Installation
-To run the Python Code Explainer locally, follow these steps:
+## Overview
 
-Clone the Repository:
+The **Python Code Explainer** is a web application that provides step-by-step explanations for Python code snippets. Using Google Generative AI, this tool breaks down code into manageable steps, detailing each part with intermediate checkpoints and results.
 
-bash
-Copy code
-git clone https://github.com/yourusername/python-code-explainer.git
-cd python-code-explainer
-Install Dependencies:
-Make sure you have Python installed. Then, install the required packages using pip:
+## Features
 
-bash
-Copy code
-pip install google-generativeai gradio
-Set Up API Key:
-Replace 'Your API key here' with your actual Google Generative AI API key in the script.
+- **Interactive Explanations**: Input a Python code snippet to receive a detailed, step-by-step explanation.
+- **User-Friendly Interface**: Built with Gradio for an easy and interactive experience.
+- **Detailed Breakdowns**: Get comprehensive explanations that clarify complex code segments.
 
-Run the Application:
+## Installation
 
-bash
-Copy code
-python code_explainer.py
-This will launch a Gradio interface in your web browser.
+To set up and run the Python Code Explainer locally, follow these steps:
 
-Usage
-Open the web interface.
-Paste the Python code snippet you want explained into the provided textbox.
-Click "Submit" to receive a detailed explanation of the code.
-Code Snippet Example
-Here's an example of how you can use the tool:
+1. **Install Dependencies**:
+    Ensure you have Python installed, then use pip to install the required packages:
+   ```bash
+   pip install google-generativeai gradio
+   ```
+2. **Set Up API Key**:
+   Replace 'Your API key here' with your actual Google Generative AI API key. Save the changes.
+   
+   palm.configure(api_key=('Your API key here'))
 
-python
-Copy code
-code_snippet = """
-def greet(name):
-    return f"Hello, {name}!"
-"""
+3. **Run the application**:
 
-explanation = get_completion(code_snippet)
-print(explanation)
-Contributing
-Feel free to contribute to this project by submitting issues or pull requests. For major changes, please open an issue first to discuss what you would like to change.
+4. **Using the Application**:
+   
+  - Open the web interface in your browser.
+  - Enter a Python code snippet into the provided textbox.
+  - Click "Submit" to receive a detailed explanation of the code snippet.
+  - The explanation will be displayed in the output textbox.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+5. **Stopping the Application**:
+   To stop the application, go back to your terminal where the script is running and press Ctrl+C.
+   
