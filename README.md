@@ -17,7 +17,8 @@ To set up and run the Python Code Explainer locally, follow these steps:
 1. **Install Dependencies**:
     Ensure you have Python installed, then use pip to install the required packages:
    ```bash
-   pip install google-generativeai gradio
+   pip install google-generativeai
+   pip install gradio
    ```
 2. **Set Up API Key**:
    Replace 'Your API key here' with your actual Google Generative AI API key. Save the changes.
